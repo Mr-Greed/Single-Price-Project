@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: gray;
+}
+
+p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+span {
+    font-size: 14px;
+    color: hsl(204, 43%, 93%);
+}
+
+.mainContainer{
+    margin: 7% 30%;
+    display: grid;
+    grid-template: 
+    "top top" auto
+    "price whyUs" auto / 50% 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#topContainer{
+    grid-area: top;
+    background-color: white;
+    padding: 20px 35px;
+}
+
+.topContainer h3{
+    color: hsl(179, 62%, 43%);
+}
+
+.topContainer h4{
+    color: hsl(71, 73%, 54%);
+    margin: 0;
+}
+
+.topContainer p{
+    margin: 0;
+    color: hsl(218, 22%, 67%);
+}
+
+
+#priceContainer{
+    grid-area: price;
+    background-color: hsl(179, 62%, 43%);
+    padding: 20px 35px;
+    color: white;
+    margin: 0;
+}
+
+.priceContainer h1 {
+    margin: 0;
+}
+
+.priceContainer p {
+    margin: 0 0 20px 0;
+    color: white;
+    font-size: 13px;
+}
+
+#whyUsContainer{
+    grid-area: whyUs;
+    background-color: hsl(179, 61%, 49%);
+    padding: 20px 35px;
+    color: white;
+}
+
+button{
+    margin: 0 2px;
+    padding: 10px 70px;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    font-weight: bold;
+    border-width: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: hsl(204, 43%, 93%);
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .mainContainer{
+        display: grid;
+        grid-template: 
+        "top" auto
+        "price" auto
+        "whyUs" auto / 1fr;
+        margin: 0;
+        overflow: visible;
+    }
+    .topContainer p{
+        margin: 20px 0 0 0;
+    }
+    .priceContainer p {
+        font-size: 18px;
+    }
+
+    button{
+        margin: 0 2px;
+        padding: 10px 125px;
+    }
+
+
+    
+}
